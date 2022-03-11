@@ -35,12 +35,15 @@ const displayContent = (text) => {
    
     return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
 };
-
+document.getElementById( "test" ).style.display = "none";
+document.getElementById( "report" ).style.display = "none";
 const switchTab = (id) => {
     if (id === "posts") {
         document.getElementById( "posts" ).style.display = "grid";
         document.getElementById( "liked" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
+        document.getElementById( "test" ).style.display = "none";
+        document.getElementById( "report" ).style.display = "none";
 
     } else if (id === "liked") {
         
@@ -48,6 +51,8 @@ const switchTab = (id) => {
         document.getElementById( "liked" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
+        document.getElementById( "test" ).style.display = "block";
+        document.getElementById( "report" ).style.display = "none";
        
 
         displayLikedPosts();
@@ -55,6 +60,8 @@ const switchTab = (id) => {
         document.getElementById( "reported" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "liked" ).style.display = "none";
+        document.getElementById( "test" ).style.display = "none";
+        document.getElementById( "report" ).style.display = "block";
         
         displayReportedPosts();
     }
