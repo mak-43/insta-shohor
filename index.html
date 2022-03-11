@@ -59,76 +59,53 @@
         </div>
     </main>
     <footer>
-        <section>
-
-            <div id="accordion" class="container py-5">
-                <div class="card ">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="accordion-button" data-bs-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                How does javascript works ?
-                            </button>
-                        </h5>
-                    </div>
-
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body ">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-                                What does javascript event loop do ?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-                                Differences between local and session storage
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         
+        <section class="container py-5">
+          <div >
+               <div class="row gx-2">
+                    <div class="card col-md-4 rounded" >
+                        <img class="img-fluid p-2  " width="" src="./images/img1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>How does javascript works</h5>
+                        <p class="card-text lh-2">Javascript is a client site web application which is single thread high level interpreted and scripting language.
+                          Everything in javascript happens in inside an execution context. Execution context is just like a big box or container. Execution Context seperated by memoey component and code component.In Memoey component variables store as key,value pair.In code component part full code is executed line by line at a time from top to bottom. Basically, JS is a synchronous single-threaded language. Js workes in Browser via v8 Engine
+                        </p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" >
+                        <img class="img-fluid p-2 h-40 "  src="./images/local vs session.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Differences between local and session storage</h5>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                  <h6 class="p-2 text-warning">Local Storage</h6>
+                                  <li>In Local Storage, Store data permanently as long as You want</li>
+                                  <li>In Local Storage, Store data permanently as long as You want</li>
+                                  <li>Only client can read Local Storage</li>
+                                  <li>Gatting Data from Local Storage is faster then gatting data making a network call</li>
+                                </div>
+                                <div class="col-md-6">
+                                  <h6 class="p-2 text-warning">Session Storage</h6>
+                                  <li>In Session Storage,Store data for a short time. When you close your tab your data will expeired</li>
+                                  <li>Storage Capacity 5Mb</li>
+                                  <li>Only client can read Local Storage</li>
+                                  <li>Session Storage can't store data for long time.So it can't possile like Local-Storage.</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" >
+                        <img class="img-fluid p-2 h-45 " src="./images/9UVCLROh0.avif" alt="Card image cap">
+                        <div class="card-body">
+                            <h4>What does JS event loop do</h4>
+                        <p class="card-text">JS is a synchronous single-threaded language.javascript has a concurrency model based on an Event-loop, which is responsiable for executing the code, collecting and processing events and executing quequed sub-task asynchronously..</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </section>
+         
     </footer>
 
 

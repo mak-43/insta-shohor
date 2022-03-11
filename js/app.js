@@ -24,7 +24,8 @@ const addToLiked = (id) => {
 };
 
 const reportPost = (id) => {
-  
+
+    
     reportedPostsId.push(id);
     const remainingPosts = posts.filter((post) => !reportedPostsId.includes(post.id));
     showPosts(remainingPosts);
@@ -152,7 +153,7 @@ const showPosts = (posts) => {
 
 const displayLikedPosts = () => {
     const likedPosts = getLikedPosts();
-    document.getElementById('reported').innerHTML=''
+    document.getElementById('liked').innerHTML=''
     likedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById( "liked" ).appendChild(div);
@@ -161,7 +162,7 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
     const reportedPosts = getReportedPosts();
-     document.getElementById('liked').innerHTML=''
+     document.getElementById('reported').innerHTML=''
     reportedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById( "reported" ).appendChild(div);
